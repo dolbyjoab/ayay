@@ -7,8 +7,8 @@ async function fetchApprovedQuotes() {
   if (!githubToken) {
     throw new Error('GITHUB_TOKEN is not set');
   }
-  const repoOwner = 'dolbyjoab'; // Replace with your GitHub username
-  const repoName = 'ayay'; // Replace with your repository name
+  const repoOwner = 'dolbyjoab';
+  const repoName = 'ayay';
 
   console.log(`Fetching issues from ${repoOwner}/${repoName}`);
   try {
@@ -18,7 +18,8 @@ async function fetchApprovedQuotes() {
         headers: {
           Authorization: `Bearer ${githubToken}`,
           Accept: 'application/vnd.github.v3+json'
-        }
+        },
+        proxy: false // Disable proxy to avoid localhost redirect
       }
     );
 
