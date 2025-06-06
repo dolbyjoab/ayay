@@ -7,8 +7,8 @@ async function fetchApprovedQuotes() {
   if (!githubToken) {
     throw new Error('GITHUB_TOKEN is not set');
   }
-  const repoOwner = 'your-username'; // Replace with your GitHub username
-  const repoName = 'quote-website'; // Replace with your repository name
+  const repoOwner = 'dolbyjoab'; // Replace with your GitHub username
+  const repoName = 'ayay'; // Replace with your repository name
 
   console.log(`Fetching issues from ${repoOwner}/${repoName}`);
   try {
