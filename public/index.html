@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Quote Website</h1>
+    <div id="login-status"></div>
+    <button id="login-btn" style="display: none;">Login with Twitter</button>
+  </header>
+  <main>
+    <section id="quote-form" style="display: none;">
+      <h2>Submit a Quote</h2>
+      <form id="submit-quote">
+        <textarea id="quote-text" required></textarea>
+        <button type="submit">Submit Quote</button>
+      </form>
+    </section>
+    <section id="quotes">
+      <h2>Approved Quotes</h2>
+      <ul id="quote-list"></ul>
+    </section>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
